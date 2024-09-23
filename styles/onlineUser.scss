@@ -1,0 +1,39 @@
+#online-user-content {
+    border: 1px solid #DBDBDB;
+    border-radius: 4px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px;
+}
+
+.online-user-icon{
+    margin-right: 5px;
+    font-size: 1.8rem !important;
+}
+
+.online-user-icon-new {
+    @extend .online-user-icon;
+
+    color: #0094A8;
+}
+
+.online-user-icon-normal {
+    @extend .online-user-icon;
+
+    color: #293749;
+}
+
+#online-user-content span {
+    font-size: 1.3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 23vw;
+}
+
+#online-user-content:hover {
+    cursor: pointer;
+    filter: brightness(.7);
+}
